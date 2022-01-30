@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name": "SpoofPasteBlocker",
+    "description": "This indicates and warns about potential copy and paste spoofing on websites.",
+    "version": "0.1",
+    "content_scripts": [
+      {
+          "match_about_blank": true,
+          "matches": ["<all_urls>"],
+          "js": ["content.js"]
+      }
+  ]
+}
